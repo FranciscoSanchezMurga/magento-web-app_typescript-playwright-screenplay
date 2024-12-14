@@ -1,0 +1,22 @@
+{
+  "name": "magento-web-app_auto-exercise_francisco-sanchez-murga",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "tsc --incremental -p tsconfig.json",
+    "test:headed": "npm run pretest && playwright test --headed -c build",
+    "test:headless": "npm run pretest && playwright test --headless -c build",
+    "test:uimode": "npm run pretest && playwright test --ui -c build",
+    "test:report": "npx playwright show-report"
+  },
+  "author": "Francisco Sánchez Murga",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.16"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}
