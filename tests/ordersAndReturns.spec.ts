@@ -268,7 +268,7 @@ test.describe('Test Suite where the ScreenPlay pattern is used as much as it was
 
     });
 
-    test.only('SCREEN-PLAY: Verify the "Zip Code" field is required to send the guest form.', async ({ page }) => {
+    test('SCREEN-PLAY: Verify the "Zip Code" field is required to send the guest form.', async ({ page }) => {
 
         // This is the only Task class I had time to develop following ScrrenPlay pattern.
         await FillFieldsFromOrdersAndReturnsForm.with(
